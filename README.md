@@ -105,6 +105,7 @@ Launching subshell in virtual environment...
 ### Check the python packages you have installed. You should see something like this.
 ```console
 (Dreggs) [myork@laptop Dreggs]$ pip freeze
+
 asgiref==3.7.2
 Django==4.2.6
 sqlparse==0.4.4
