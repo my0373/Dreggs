@@ -80,6 +80,14 @@ Virtualenv location: /home/myork/.local/share/virtualenvs/Dreggs-V9WQHE1c
 Installing dependencies from Pipfile.lock (efb681)...
 
 ```
+## Installing the developer tools
+If you are planning to develop, or contribute to the project then you'll want these additional libraries installed.
+```[shell]
+[myork@laptop Dreggs]$ pipenv install --dev
+Installing dependencies from Pipfile.lock (efb681)...
+Installing dependencies from Pipfile.lock (efb681)...
+```
+
 ## Troubleshooting pipenv
 
 ### Enter the pipenv shell
@@ -91,6 +99,14 @@ Launching subshell in virtual environment...
 [myork@laptop Dreggs]$  . /home/myork/.local/share/virtualenvs/Dreggs-V9WQHE1c/bin/activate
 
 (Dreggs) [myork@laptop Dreggs]$ 
+```
+
+### Check the python packages you have installed. You should see something like this.
+```[shell]
+(Dreggs) [myork@laptop Dreggs]$ pip freeze
+asgiref==3.7.2
+Django==4.2.6
+sqlparse==0.4.4
 ```
 
 
