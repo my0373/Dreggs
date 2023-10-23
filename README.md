@@ -84,6 +84,7 @@ Installing dependencies from Pipfile.lock (efb681)...
 If you are planning to develop, or contribute to the project then you'll want these additional libraries installed.
 ```console
 [myork@laptop Dreggs]$ pipenv install --dev
+
 Installing dependencies from Pipfile.lock (efb681)...
 Installing dependencies from Pipfile.lock (efb681)...
 ```
@@ -114,6 +115,8 @@ sqlparse==0.4.4
 
 ```console
 (Dreggs) [myork@laptop Dreggs]$ deactivate
+
+[myork@laptop Dreggs]$
 ```
 
 ### To rebuild the lockfile from the original Pipenv
