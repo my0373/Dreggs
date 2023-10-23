@@ -89,6 +89,22 @@ Installing dependencies from Pipfile.lock (efb681)...
 Installing dependencies from Pipfile.lock (efb681)...
 ```
 
+### Configuring VSCode default interpreter to use the pipenv version of python
+```console
+[myork@laptop Dreggs]$ pipenv --venv
+/home/myork/.local/share/virtualenvs/Dreggs-V9WQHE1c
+
+```
+### Configuring VSCode default interpreter to use the pipenv version of python
+1. Press keys ``` ctrl + shift + p ``` to open the command palette
+1. Select: ``` Python: Select interpreter```
+1. Select: ``` Enter interpreter path```
+1. Paste the output from the venv path above and append ```/bin/python```. 
+1. You should end up with a path that looks similar to ```/home/myork/.local/share/virtualenvs/Dreggs-V9WQHE1c/bin/python```
+1. Press return
+1. You can then open the terminal with ``` ctrl+` ``` shortcut and it will load your pipenv automagically. 
+
+
 ## Troubleshooting pipenv
 
 ### Enter the pipenv shell
