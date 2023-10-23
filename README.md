@@ -8,7 +8,7 @@ PR's are welcome for other OS's.
 ## Installing with pipenv
 
 ### Install pipenv on your local system
-```[shell]
+```bash
 [myork@laptop Dreggs]$ pip install pipenv
 
 Collecting pipenv
@@ -50,12 +50,12 @@ Successfully installed certifi-2023.7.22 distlib-0.3.7 filelock-3.12.4 pipenv-20
 ```
 
 ### Cloning the stable branch
-```[shell]
+```bash
 [myork@laptop ~]$ git clone https://github.com/my0373/Dreggs.git
 ```
 ### Switch to the project directory
 
-```[shell]
+```bash
 [myork@laptop ~]$ cd Dreggs/
 [myork@laptop Dreggs]$ 
 ```
@@ -63,7 +63,7 @@ Successfully installed certifi-2023.7.22 distlib-0.3.7 filelock-3.12.4 pipenv-20
 
 ### Installing the project dependencies using pipenv
 
-```[shell]
+```bash
 [myork@laptop Dreggs]$ pipenv install
 
 Creating a virtualenv for this project...
@@ -82,7 +82,7 @@ Installing dependencies from Pipfile.lock (efb681)...
 ```
 ## Installing the developer tools
 If you are planning to develop, or contribute to the project then you'll want these additional libraries installed.
-```[shell]
+```bash
 [myork@laptop Dreggs]$ pipenv install --dev
 Installing dependencies from Pipfile.lock (efb681)...
 Installing dependencies from Pipfile.lock (efb681)...
@@ -91,7 +91,7 @@ Installing dependencies from Pipfile.lock (efb681)...
 ## Troubleshooting pipenv
 
 ### Enter the pipenv shell
-```[shell]
+```bash
 [myork@laptop Dreggs]$ pipenv shell
 
 Launching subshell in virtual environment...
@@ -102,7 +102,7 @@ Launching subshell in virtual environment...
 ```
 
 ### Check the python packages you have installed. You should see something like this.
-```[shell]
+```bash
 (Dreggs) [myork@laptop Dreggs]$ pip freeze
 asgiref==3.7.2
 Django==4.2.6
@@ -112,12 +112,12 @@ sqlparse==0.4.4
 
 ### To leave the current pipenv shell
 
-```[shell]
+```bash
 (Dreggs) [myork@laptop Dreggs]$ deactivate
 ```
 
 ### To rebuild the lockfile from the original Pipenv
-```[shell]
+```bash
 [myork@laptop Dreggs]$ pipenv install
 
 Creating a virtualenv for this project...
@@ -137,7 +137,7 @@ Alternatively, run a command inside the virtualenv with pipenv run.
 ```
 
 ### To clean up pipenv (in case you need to reinstall)
-```[shell]
+```bash
 [myork@laptop Dreggs]$ pipenv --rm
 Removing virtualenv (/home/myork/.local/share/virtualenvs/Dreggs-V9WQHE1c)...
 ```
