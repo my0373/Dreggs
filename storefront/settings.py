@@ -79,15 +79,27 @@ WSGI_APPLICATION = "storefront.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+
+# By default we leave sqlite as the default in source control.
+# In production, we really should be using postgres.
 DATABASES = {
+
     "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "dreggs",
-        "USER": "postgres",
-        "PASSWORD": "Redhat123",
-        "HOST": "127.0.0.1",
-        "PORT": "5432",
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": "dreggs.sqlite3",
     }
+
+
+## In case we want to user postgres as our database
+## Which we probably would for production
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": "dreggs",
+#         "USER": "postgres",
+#         "PASSWORD": "Redhat123",
+#         "HOST": "127.0.0.1",
+#         "PORT": "5432",
+#     }
 }
 
 
