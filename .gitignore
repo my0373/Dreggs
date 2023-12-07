@@ -1,0 +1,5 @@
+*.pyc
+*.key
+*.id_rsa
+*.id_dsa
+*.sqlite3
